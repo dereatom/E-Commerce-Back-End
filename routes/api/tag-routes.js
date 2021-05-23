@@ -6,10 +6,10 @@ router.get('/', async (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   try {
-    console.log(`\n Getting all Tag data \n`)
+     console.log(`\n Getting all Tag data \n`)
 
       const tagData = await Tag.findAll({
-        include: {model: Product, through: ProductTag, as: 'relational_products'} 
+        include: [{model: Product, through: ProductTag, as: 'tagged-products'}] 
       })
       res.status(200).json(tagData);
 
@@ -22,12 +22,12 @@ router.get('/:id', async (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
   try {
-    console.log(`\n Getting data with id: ${req.params.id} \n`)
+     console.log(`\n Getting data with id: ${req.params.id} \n`)
 
-    const tagData = await Tag.findByPk(req.params.id, {
-      //JOIN with Product
-      include: { model: Product, through: ProductTag, as: 'relational_products'} 
-    });
+      const tagData = await Tag.findByPk(req.params.id, {
+        //JOIN with Product
+        include: [{ model: Product, through: ProductTag, as: 'tagged-products'}]
+      })
 
     //if wrong tag id is entered
     if (!tagData) {
@@ -56,19 +56,15 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   // update a tag's name by its `id` value
-  try {
-    console.log(`\n Updating tag_name to: ${req.body.tag_name} \n`);
-    
-    //await tag.update to take place
+  try{
     const tagData = await Tag.update(
-      { tag_name: req.body.tag_name },
-      { returning: true, where: {id: req.params.id} }
+      { tag_name: req.body.tag_name},
+       { returning: true, where:{ id: req.params.id} }
     )
-    res.status(200).json(tagData);
-
-  } catch(err) {
-    res.status(500).json(err);
-  }
+    res.status(200).json(tagData)
+    } catch (err) {
+      res.status(500).json(err);
+    }
 });
 
 router.delete('/:id', async (req, res) => {

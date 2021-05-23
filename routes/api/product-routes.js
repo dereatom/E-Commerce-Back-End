@@ -1,8 +1,6 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 // The `/api/products` endpoint
-// const sequelize = require('../../config/connection');
-
 // get all products
 router.get('/', async (req, res) => {
   // find all products
@@ -13,13 +11,10 @@ router.get('/', async (req, res) => {
     const productData = await Product.findAll({
       // associate the category
       include: [ { model: Category },
-                 { model: Tag, through: ProductTag, as: 'relational_tag' }]
-     
-    }).then((productData) => {
-      //return JSON 
-      res.status(200).json(productData);
+                 { model: Tag,through: ProductTag, as: 'product-tags'}]
     })
-  } catch (err) {
+      res.status(200).json(productData);
+      } catch (err) {
     res.status(500).json(err);
   }
 });
@@ -27,16 +22,16 @@ router.get('/', async (req, res) => {
 // get one product
 router.get('/:id', async (req, res) => {
   // find a single product by its `id`
-  //router.get('/:id', async (req, res) => {
+ 
   try {
-    // console.log(`\n Getting Product data for id: ${req.params.id} (no other associated data) \n`);
+    console.log(`\n Getting Product data for id: ${req.params.id} (no other associated data) \n`);
     const productData = await Product.findByPk(req.params.id, {
-      include: [{ model: Category, through: ProductTag, as: 'relational_tag' }]
+      include: [{ model: Category},
+                { model: Tag, through: ProductTag, as:'product-tags'}]
     });
 
     if (!productData) {
       res.status(404).json({ message: 'No product found with this id!' });
-      return;
     } else {
 
     res.status(200).json(productData);
