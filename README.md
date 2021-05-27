@@ -26,8 +26,17 @@
   Services to businesses of all sizes.
 
   ## Links
-  [Walkthrough-Video](https://drive.google.com/file/d/1NtXZ9evUGdJoYYBoPEmDoAdK5JgN9SZx/view?usp=sharing) [ScreenshotA](https://drive.google.com/file/d/1XxP0Jh8MHPyLddA0TyuzO0G35y5T66uu/view?usp=sharing) [ScreenshotB](https://drive.google.com/file/d/1n-2BrYRwrsJ0DMWESXYvOl-aZNMxwkhk/view?usp=sharing) [ScreenshotC](https://drive.google.com/file/d/1EiP8mmt7VGxyxdAk5XNeOHEqfrGCfein/view?usp=sharing) [ScreenshotD](https://drive.google.com/file/d/1xvrGEEXftBcRC3Oh8-m7HeCNdG30g_Fa/view?usp=sharing)
-  
+![CaptureA](https://user-images.githubusercontent.com/77940481/119742113-147a7780-be55-11eb-8954-669902cfcec8.JPG)
+![CaptureD](https://user-images.githubusercontent.com/77940481/119742105-0f1d2d00-be55-11eb-9781-e4dc18f02e59.JPG)
+![CaptureB](https://user-images.githubusercontent.com/77940481/119741691-3aebe300-be54-11eb-96bb-7e098904bfdb.JPG)
+![CaptureC](https://user-images.githubusercontent.com/77940481/119741670-2f98b780-be54-11eb-9b9f-58b21bfa8b82.JPG)
+![CaptureD](https://user-images.githubusercontent.com/77940481/119745611-80141300-be5c-11eb-8f4c-b0dec27e8dd7.JPG)
+![CaptureE](https://user-images.githubusercontent.com/77940481/119745629-86a28a80-be5c-11eb-8443-407e0015fa7b.JPG)
+![CaptureF](https://user-images.githubusercontent.com/77940481/119745635-899d7b00-be5c-11eb-8d3a-d3c96fb7d4f0.JPG)
+![Walkthrough_video](https://drive.google.com/file/d/1tcExX2jYlH5eF7kgt25jVJ6_U46VSS5d/view?usp=sharing)
+Please follow the link and see. The vidio was big and not allow me on github to create.
+
+
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
@@ -59,5 +68,6 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 
 ## Links to repo and URL
-[Github Repository]: (https://github.com/dereatom/E-Commerce-Back-End/)
-[Deployed App or URL]: (https://dereatom.github.io/E-Commerce-Back-End/)
+[REpo](https://github.com/dereatom/E-Commerce-Back-End)
+
+[URL](https://dereatom.github.io/E-Commerce-Back-End/)
