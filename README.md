@@ -34,7 +34,7 @@
 ![CaptureE](https://user-images.githubusercontent.com/77940481/119745629-86a28a80-be5c-11eb-8443-407e0015fa7b.JPG)
 ![CaptureF](https://user-images.githubusercontent.com/77940481/119745635-899d7b00-be5c-11eb-8d3a-d3c96fb7d4f0.JPG)
 ![Walkthrough_video](https://drive.google.com/file/d/1tcExX2jYlH5eF7kgt25jVJ6_U46VSS5d/view?usp=sharing)
-Please follow the link and see. The vidio was big and not allow me on github to create.
+Please follow the link and see. The vidio was big and not allow me on github to create in github issues.
 
 
   ## License
