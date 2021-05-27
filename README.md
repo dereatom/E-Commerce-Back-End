@@ -25,7 +25,7 @@
   ## Usage
   Services to businesses of all sizes.
 
-  ## Links
+  ## Screenshots
 ![CaptureA](https://user-images.githubusercontent.com/77940481/119742113-147a7780-be55-11eb-8954-669902cfcec8.JPG)
 ![CaptureD](https://user-images.githubusercontent.com/77940481/119742105-0f1d2d00-be55-11eb-9781-e4dc18f02e59.JPG)
 ![CaptureB](https://user-images.githubusercontent.com/77940481/119741691-3aebe300-be54-11eb-96bb-7e098904bfdb.JPG)
